@@ -486,13 +486,19 @@ a {
 @media screen and (max-width: 1000px) {
   .homepage-grid {
     grid-template-areas:
-      "left main"
-      ". right"
-      "footer-links footer-links"
-      "homepage-footer homepage-footer"
+       "left"
+      "main"
+      "right"
+      "footer-links"
+      "homepage-footer"
     ;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr;
     gap: 30px 20px;
+  }
+   .vertical {
+    flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
   }
 }
 

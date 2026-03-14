@@ -18,11 +18,25 @@
       <div class="left">
         {% include leftnav.html %}
       </div>
+
+
       <div class="main">
         <img src="../content/cover.jpeg" alt="Book Cover"
           class="homepage-cover-image">
         <p>Cover Page of the first English edition of the book</p>
+
+        <div class="char-right" style="display: flex; justify-content: center;">
+          <div style="background: rgba(0,0,0,0.6); color: #fff; padding: 2rem; border-radius: 1rem; margin-bottom: 2rem; font-size: 1.5rem; text-align: center; position: relative; width: 70%;">
+            <span style="font-size: 3rem; font-weight: bold; position: absolute; left: 1rem; top: 0.5rem; opacity: 0.8;">&#8220;</span>
+            <span style="font-size: 3rem; font-weight: bold; position: absolute; right: 1rem; bottom: 0.5rem; opacity: 0.8;">&#8221;</span>
+            <blockquote style="margin: 0; font-style: italic;">
+              MANY YEARS LATER as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.
+            </blockquote>
+          </div>
+        </div>
       </div>
+
+
       <div class="right">
         {% include news.html %}
       </div>
@@ -52,16 +66,10 @@
           <a href="{% link pages/blogs.html %}">All Blogs &RightArrow;</a>
         </div>
       </div>
-
-      <div class="homepage-footer">
-        <hr width="70%">
-        Created by <a target="_blank" href="https://twisthead.github.io/"
-          style="text-decoration: none;">Najm Us Saqib</a> | <a
-          href="{% link pages/license.md %}"
-          style="text-decoration: none;">License Info</a>
-      </div>
-    </div>
     {% include footer.html %}
+
+
+    </div>
   </body>
 
 </html>
